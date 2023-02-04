@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>koreandemons.apb</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inconsolata");
+
+      * {
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        overflow: hidden;
+      }
+
+      body {
+        background-color: #f0b27a;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+      }
+
+      #content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 1rem;
+        font-family: "Inconsolata", monospace;
+        text-align: center;
+		color: #DE3163;
+		
+      }
+	  .logo {
+		position: center;
+		animation-name: floating;
+		animation-duration: 6s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+		margin-top: 265px;
+		user-select: none;
+        overflow: hidden;		
+		pointer-events: none;
+	  }
+	  @keyframes floating {
+		0% { transform: translate(0,  0px); }
+		50%  { transform: translate(0, 15px); }
+		100%   { transform: translate(0, -0px); }    
+	}
+	  
+    </style>
+  </head>
+  <script src="app.js"></script>
+  <body>
+	<div class="logo">
+		<center><img src="logo.png" unselectable="on"><center>
+	</div>
+    <div id="content">
+      <p>asiandemon</p>
+      <p>la chancla</p>
+      <p>heartburn</p>
+      <p>yeot</p>
+	  <p>empress</p>
+	  <p>javelin</p>
+	  <p>ancientspirit</p>
+	  <p>firstrabbit</p>
+	  <p>cliche</p>
+      
+    </div>
+    <canvas id="canvas"></canvas>
+  </body>
+</html>
